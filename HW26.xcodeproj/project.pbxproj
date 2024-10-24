@@ -12,6 +12,8 @@
 		0631E6732CBED3D900F2785D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0631E6722CBED3D900F2785D /* ViewController.swift */; };
 		0631E6782CBED3DB00F2785D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0631E6772CBED3DB00F2785D /* Assets.xcassets */; };
 		0631E67B2CBED3DB00F2785D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0631E67A2CBED3DB00F2785D /* Base */; };
+		D2D1246E2CCAAC2F008A75FF /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D1246D2CCAAC24008A75FF /* CustomView.swift */; };
+		D2D124922CCAD13E008A75FF /* ICustomViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D124912CCAD136008A75FF /* ICustomViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		0631E6772CBED3DB00F2785D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0631E67A2CBED3DB00F2785D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0631E67C2CBED3DB00F2785D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2D1246D2CCAAC24008A75FF /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		D2D124912CCAD136008A75FF /* ICustomViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICustomViewDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				0631E66E2CBED3D900F2785D /* AppDelegate.swift */,
+				D2D1246D2CCAAC24008A75FF /* CustomView.swift */,
+				D2D124912CCAD136008A75FF /* ICustomViewDelegate.swift */,
 				0631E6702CBED3D900F2785D /* SceneDelegate.swift */,
 				0631E6722CBED3D900F2785D /* ViewController.swift */,
 				0631E6772CBED3DB00F2785D /* Assets.xcassets */,
@@ -134,7 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2D124922CCAD13E008A75FF /* ICustomViewDelegate.swift in Sources */,
 				0631E6732CBED3D900F2785D /* ViewController.swift in Sources */,
+				D2D1246E2CCAAC2F008A75FF /* CustomView.swift in Sources */,
 				0631E66F2CBED3D900F2785D /* AppDelegate.swift in Sources */,
 				0631E6712CBED3D900F2785D /* SceneDelegate.swift in Sources */,
 			);
@@ -280,6 +288,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CB8X2YFAUD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HW26/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -306,6 +315,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CB8X2YFAUD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HW26/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
