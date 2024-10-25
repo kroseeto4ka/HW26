@@ -44,7 +44,9 @@ private extension ViewController {
     func setupLabel() {
         messageLabel.backgroundColor = .systemTeal
         messageLabel.textColor = .white
+        messageLabel.font = .systemFont(ofSize: 40, weight: .bold)
         messageLabel.textAlignment = .center
+        messageLabel.numberOfLines = 3
         messageLabel.text = "Здесь будет название выбранной вью"
         
         view.addSubview(messageLabel)

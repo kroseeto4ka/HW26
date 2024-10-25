@@ -35,13 +35,28 @@ class CustomView: UIView {
             label.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 5)
         ])
     }
-    
+}
+
+//MARK: - Setup HitTest
+extension CustomView {
     override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
         let foundView = super.hitTest(point, with: event)
         if foundView is CustomView {
             delegate?.didHitView(foundView!)
         }
-        
         return foundView
+    }
+    
+    override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+        let foundPoint = super.point(inside: point, with: event)
+        if foundPoint {
+            return true
+        } else {
+            for subview in subviews.reversed() {
+                let convertedPoint = subview.convert(point, from: self)
+                return subview.point(inside: convertedPoint, with: event)
+            }
+        }
+        return false
     }
 }
