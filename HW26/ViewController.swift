@@ -59,7 +59,6 @@ private extension ViewController {
         viewD.delegate = self
         viewE.delegate = self
     }
-	
 }
 
 // MARK: Setup constraints
